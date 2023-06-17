@@ -49,6 +49,7 @@ include { INPUT_CHECK } from '../subworkflows/local/input_check'
 // MODULE: Installed directly from nf-core/modules
 //
 include { FASTQC                      } from '../modules/nf-core/fastqc/main'
+include { STAR_INDEX; STAR_ALIGN; SALMON_INDEX; SALMON_QUANT; DAPARS2; APA_QUANT } from '../modules/local/base'
 include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
 include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
 
@@ -83,6 +84,49 @@ workflow DEVAPADB {
 
     CUSTOM_DUMPSOFTWAREVERSIONS (
         ch_versions.unique().collectFile(name: 'collated_versions.yml')
+    )
+
+    // STAR build index
+    STAR_INDEX (
+        INPUT_CHECK.out.genome_fasta,
+        INPUT_CHECK.out.genome_gtf
+    )
+
+    // STAR alignment
+    STAR_ALIGN (
+        INPUT_CHECK.out.reads,
+        STAR_INDEX.out.index,
+        INPUT_CHECK.out.genome_fasta,
+        INPUT_CHECK.out.genome_gtf
+    )
+
+    // Salmon index
+    SALMON_INDEX (
+        INPUT_CHECK.out.genome_fasta,
+        INPUT_CHECK.out.genome_gtf
+    )
+
+    // Salmon quant
+    SALMON_QUANT (
+        INPUT_CHECK.out.reads,
+        SALMON_INDEX.out.index
+    )
+
+    // Dapars2
+    DAPARS2 (
+        params.sample_list,
+        params.ref_bed,
+        params.refid_to_symbol
+    )
+
+    // APA quantification
+    APA_QUANT (
+        INPUT_CHECK.out.reads,
+        INPUT_CHECK.out.genome_fasta,
+        INPUT_CHECK.out.genome_gtf,
+        params.sample_list,
+        params.ref_bed,
+        params.refid_to_symbol
     )
 
     //
