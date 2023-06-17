@@ -1,5 +1,5 @@
 process STAR_INDEX {
-    label "devapa_star"
+    label "devapa"
 
     input:
     path(ref_fasta)
@@ -23,7 +23,7 @@ process STAR_INDEX {
 
 
 process STAR_ALIGN {
-    label "devapa_star"
+    label "devapa"
 
     input:
     path(ref_fasta)
@@ -93,7 +93,7 @@ process SALMON_QUANT {
 
 
 process DAPARS2 {
-    label "devapa_base"
+    label "devapa"
 
     input:
     path(ref_fasta)
@@ -112,7 +112,7 @@ process DAPARS2 {
 
 
 process APA_QUANT {
-    label "devapa_base"
+    label "devapa"
 
     input:
     path(ref_fasta)
