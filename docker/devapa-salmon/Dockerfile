@@ -10,10 +10,10 @@ ARG MAMBA_DOCKERFILE_ACTIVATE=1
 ENV PATH=/opt/conda/bin:$PATH
 
 # Copy conda env files
-COPY ./docker/devapa-base/env_*.yml /tmp
+COPY ./docker/devapa-salmon/env_*.yml /tmp
 
 # Install packages
-RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env_base.yml -y
+RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env_salmon.yml -y
 
 # clean
 RUN micromamba clean --all --yes

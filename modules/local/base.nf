@@ -93,7 +93,7 @@ process SALMON_QUANT {
 
 
 process DAPARS2 {
-    label "devapa_dapas2"
+    label "devapa_base"
 
     input:
     path(ref_fasta)
@@ -112,7 +112,7 @@ process DAPARS2 {
 
 
 process APA_QUANT {
-    label "devapa_dapas2"
+    label "devapa_base"
 
     input:
     path(ref_fasta)
