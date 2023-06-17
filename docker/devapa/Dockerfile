@@ -13,7 +13,7 @@ COPY ./docker/devapa/env.yml /tmp
 
 # Install packages
 # RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env_base.yml -y
-RUN conda env update -n base -f /tmp/env_base.yml
+RUN conda env update -n base -f /tmp/env.yml
 
 # clean
 # RUN micromamba clean --all --yes
