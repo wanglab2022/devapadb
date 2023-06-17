@@ -14,8 +14,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./docker/devapa-salmon/Dockerfile
-            image: wanglab2022/devapa-salmon
+          # - dockerfile: ./docker/devapa-salmon/Dockerfile
+          #   image: wanglab2022/devapa-salmon
+          - dockerfile: ./docker/devapa-star/Dockerfile
+            image: wanglab2022/devapa-star
     permissions:
       contents: read
       packages: write
