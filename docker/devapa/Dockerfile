@@ -10,10 +10,10 @@ ARG MAMBA_DOCKERFILE_ACTIVATE=1
 ENV PATH=/opt/conda/bin:$PATH
 
 # Copy conda env files
-COPY ./docker/devapa-star/env_*.yml /tmp
+COPY ./docker/devapa/env.yml /tmp
 
 # Install packages
-RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env_star.yml -y
+RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env.yml -y
 
 # clean
 RUN micromamba clean --all --yes
