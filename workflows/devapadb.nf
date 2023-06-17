@@ -11,7 +11,7 @@ WorkflowDevapadb.initialise(params, log)
 
 // TODO nf-core: Add all file path parameters for the pipeline to the list below
 // Check input path parameters to see if they exist
-def checkPathParamList = [ params.input, params.multiqc_config, params.fasta ]
+def checkPathParamList = [ params.input, params.multiqc_config ]
 for (param in checkPathParamList) { if (param) { file(param, checkIfExists: true) } }
 
 // Check mandatory parameters
@@ -84,12 +84,6 @@ workflow DEVAPADB {
 
     CUSTOM_DUMPSOFTWAREVERSIONS (
         ch_versions.unique().collectFile(name: 'collated_versions.yml')
-    )
-
-    // STAR build index
-    STAR_INDEX (
-        INPUT_CHECK.out.genome_fasta,
-        INPUT_CHECK.out.genome_gtf
     )
 
     // STAR alignment
