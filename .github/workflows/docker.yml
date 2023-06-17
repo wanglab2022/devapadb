@@ -14,16 +14,21 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - dockerfile: ./docker/devapa-base/Dockerfile
+            image: wanglab2022/devapa-base
           # - dockerfile: ./docker/devapa-salmon/Dockerfile
           #   image: wanglab2022/devapa-salmon
-          - dockerfile: ./docker/devapa-star/Dockerfile
-            image: wanglab2022/devapa-star
+          # - dockerfile: ./docker/devapa-star/Dockerfile
+          #   image: wanglab2022/devapa-star
     permissions:
       contents: read
       packages: write
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
 
       # Docker Buildx
       - name: Set up Docker Buildx
@@ -46,6 +51,7 @@ jobs:
         with:
           context: "."
           file: ${{ matrix.dockerfile }}
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
