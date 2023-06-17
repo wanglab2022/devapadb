@@ -16,6 +16,6 @@ COPY ./docker/devapa/env.yml /tmp
 RUN conda env update -n base -f /tmp/env.yml
 
 # clean
-# RUN micromamba clean --all --yes
+RUN conda clean --all --yes
 
 ENV PATH=/home/3aQTL_pipe/src:$PATH
