@@ -4,4 +4,4 @@ channels:
     - bioconda
 dependencies:
     - conda-forge::procps-ng=4.0.0
-    - bioconda::salmon
+    - bioconda::salmon=1.10.1
