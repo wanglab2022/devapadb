@@ -110,7 +110,8 @@ workflow DEVAPADB {
     STAR_ALIGN (
         INPUT_CHECK.out.reads,
         STAR_GENOMEGENERATE.out.index,
-        file(params.refgtf)
+        file(params.refgtf),
+        false,false,false
     )
     ch_versions = ch_versions.mix(STAR_ALIGN.out.versions.first())
 
