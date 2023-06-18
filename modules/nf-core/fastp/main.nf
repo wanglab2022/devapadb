@@ -35,16 +35,13 @@ process FASTP {
         [ ! -f  ${prefix}.fastq.gz ] && ln -sf $reads ${prefix}.fastq.gz
         cat ${prefix}.fastq.gz \\
         | fastp \\
-            --stdin \\
-            --stdout \\
             --in1 ${prefix}.fastq.gz \\
+            --out1 ${prefix}.fastp.fastq.gz \\
             --thread $task.cpus \\
             --json ${prefix}.fastp.json \\
             --html ${prefix}.fastp.html \\
             $fail_fastq \\
-            $args \\
-            2> ${prefix}.fastp.log \\
-        | gzip -c > ${prefix}.fastp.fastq.gz
+            $args
         cat <<-END_VERSIONS > versions.yml
         "${task.process}":
             fastp: \$(fastp --version 2>&1 | sed -e "s/fastp //g")
