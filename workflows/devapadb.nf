@@ -86,13 +86,13 @@ workflow DEVAPADB {
     )
     ch_versions = ch_versions.mix(FASTQC.out.versions.first())
 
-    // //
-    // // MODULE: Run FASTP
-    // //
-    // FASTP (
-    //     INPUT_CHECK.out.reads
-    // )
-    // ch_versions = ch_versions.mix(FASTP.out.versions.first())
+    //
+    // MODULE: Run FASTP
+    //
+    FASTP (
+        INPUT_CHECK.out.reads
+    )
+    ch_versions = ch_versions.mix(FASTP.out.versions.first())
 
     // //
     // // MODULE: STAR index
