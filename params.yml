@@ -1,7 +1,7 @@
 # =============================  Input  =======================================
-refgenome: "/project/genomics/jru/data2/db/viroprofiler/ref_genomes/viral_genomes.fasta"
-refgtf: "/project/genomics/jru/data2/db/viroprofiler/ref_genomes/viral_genomes.gtf"
-refrna:  "/project/genomics/jru/data2/db/viroprofiler/ref_genomes/viral_genomes.fa"
+fasta: "/path/to/ref.fasta"
+refgtf: "/path/to/ref.gtf"
+refrna:  "/path/to/ref.fa"
 
 
 # =============================  Output  ======================================

@@ -11,7 +11,7 @@ WorkflowDevapadb.initialise(params, log)
 
 // TODO nf-core: Add all file path parameters for the pipeline to the list below
 // Check input path parameters to see if they exist
-def checkPathParamList = [ params.input, params.refgenome, params.refgtf, params.refrna, params.multiqc_config ]
+def checkPathParamList = [ params.input, params.fasta, params.refgtf, params.refrna, params.multiqc_config ]
 for (param in checkPathParamList) { if (param) { file(param, checkIfExists: true) } }
 
 // Check mandatory parameters
@@ -99,7 +99,7 @@ workflow DEVAPADB {
     // MODULE: STAR index
     //
     STAR_GENOMEGENERATE (
-        file(params.refgenome),
+        file(params.fasta),
         file(params.refgtf)
     )
     ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
