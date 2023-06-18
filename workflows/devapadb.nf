@@ -53,7 +53,7 @@ include { FASTQC                      } from '../modules/nf-core/fastqc/main'
 include { FASTP                       } from '../modules/nf-core/fastp/main'
 include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
 // include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
-// include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
+include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
 // include { SALMON_QUANT                } from '../modules/nf-core/salmon/quant/main'
 // include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
 // include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
@@ -114,14 +114,14 @@ workflow DEVAPADB {
     // )
     // ch_versions = ch_versions.mix(STAR_ALIGN.out.versions.first())
 
-    // //
-    // // MODULE: Salmon index
-    // //
-    // SALMON_INDEX (
-    //     file(params.refgenome),
-    //     file(params.refrna)
-    // )
-    // ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
+    //
+    // MODULE: Salmon index
+    //
+    SALMON_INDEX (
+        file(params.refgenome),
+        file(params.refrna)
+    )
+    ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
 
     // //
     // // MODULE: Salmon quant
