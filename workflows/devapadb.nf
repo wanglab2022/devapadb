@@ -11,7 +11,7 @@ WorkflowDevapadb.initialise(params, log)
 
 // TODO nf-core: Add all file path parameters for the pipeline to the list below
 // Check input path parameters to see if they exist
-def checkPathParamList = [ params.input, params.multiqc_config ]
+def checkPathParamList = [ params.input, params.refgenome, params.refgtf, params.refrna, params.multiqc_config ]
 for (param in checkPathParamList) { if (param) { file(param, checkIfExists: true) } }
 
 // Check mandatory parameters
@@ -37,7 +37,8 @@ ch_multiqc_custom_methods_description = params.multiqc_methods_description ? fil
 //
 // SUBWORKFLOW: Consisting of a mix of local and nf-core/modules
 //
-include { INPUT_CHECK } from '../subworkflows/local/input_check'
+include { INPUT_CHECK        } from '../subworkflows/local/input_check'
+// include { DAPARS2; APA_QUANT } from '../modules/local/base'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +50,10 @@ include { INPUT_CHECK } from '../subworkflows/local/input_check'
 // MODULE: Installed directly from nf-core/modules
 //
 include { FASTQC                      } from '../modules/nf-core/fastqc/main'
-include { STAR_INDEX; STAR_ALIGN; SALMON_INDEX; SALMON_QUANT; DAPARS2; APA_QUANT } from '../modules/local/base'
+include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
+include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
+include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
+include { SALMON_QUANT                } from '../modules/nf-core/salmon/quant/main'
 include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
 include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
 
@@ -82,46 +86,54 @@ workflow DEVAPADB {
     )
     ch_versions = ch_versions.mix(FASTQC.out.versions.first())
 
-    CUSTOM_DUMPSOFTWAREVERSIONS (
-        ch_versions.unique().collectFile(name: 'collated_versions.yml')
+    //
+    // MODULE: Run FASTP
+    //
+    FASTP (
+        INPUT_CHECK.out.reads
     )
+    ch_versions = ch_versions.mix(FASTP.out.versions.first())
 
-    // STAR alignment
+    //
+    // MODULE: STAR index
+    //
+    STAR_GENOMEGENERATE (
+        file(params.refgenome),
+        file(params.refgtf)
+    )
+    ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
+
+    //
+    // MODULE: STAR align
+    //
     STAR_ALIGN (
         INPUT_CHECK.out.reads,
-        STAR_INDEX.out.index,
-        INPUT_CHECK.out.genome_fasta,
-        INPUT_CHECK.out.genome_gtf
+        STAR_GENOMEGENERATE.out.index,
+        file(params.refgtf)
     )
+    ch_versions = ch_versions.mix(STAR_ALIGN.out.versions.first())
 
-    // Salmon index
+    //
+    // MODULE: Salmon index
+    //
     SALMON_INDEX (
-        INPUT_CHECK.out.genome_fasta,
-        INPUT_CHECK.out.genome_gtf
+        file(params.refgenome),
+        file(params.refrna)
     )
+    ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
 
-    // Salmon quant
+    //
+    // MODULE: Salmon quant
+    //
     SALMON_QUANT (
         INPUT_CHECK.out.reads,
-        SALMON_INDEX.out.index
+        SALMON_INDEX.out.index,
+        file(params.refgtf)
+        file(params.refrna)
     )
+    ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
 
-    // Dapars2
-    DAPARS2 (
-        params.sample_list,
-        params.ref_bed,
-        params.refid_to_symbol
-    )
 
-    // APA quantification
-    APA_QUANT (
-        INPUT_CHECK.out.reads,
-        INPUT_CHECK.out.genome_fasta,
-        INPUT_CHECK.out.genome_gtf,
-        params.sample_list,
-        params.ref_bed,
-        params.refid_to_symbol
-    )
 
     //
     // MODULE: MultiQC

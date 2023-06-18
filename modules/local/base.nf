@@ -2,32 +2,9 @@ process STAR_INDEX {
     label "devapa"
 
     input:
-    path(ref_fasta)
     val(prefix)
-
-    output:
-    path("star_index_$prefix"), emit: ch_star_index
-
-    when:
-    task.ext.when == null || task.ext.when
-
-    """
-    STAR --runThreadN $task.cpus \\
-        --runMode genomeGenerate \\
-        --genomeDir star_index_$prefix \\ ##索引生成的文件夹
-        --genomeFastaFiles $ref_fasta \\ # hg38.fa 参考基因组的序列文件
-        --sjdbGTFfile $ref_gtf \\ # hg38.gtf 参考基因组的注释文件
-        --sjdbOverhang 100
-    """
-}
-
-
-process STAR_ALIGN {
-    label "devapa"
-
-    input:
-    path(ref_fasta)
-    val(prefix)
+    path(refgenome)
+    path(refgtf)
 
     output:
     path("star_index_$prefix"), emit: ch_star_index
@@ -37,17 +14,45 @@ process STAR_ALIGN {
 
     """
     STAR \\
-        --outWigType wiggle --outWigStrand Stranded \\
+        --genomeFastaFiles $refgenome \\
+        --sjdbGTFfile $refgtf \\
+        --runThreadN $task.cpus \\
+        --runMode genomeGenerate \\
+        --sjdbOverhang 100 \\
+        --genomeDir star_index_$prefix
+    """
+}
+
+
+process STAR_ALIGN {
+    label "devapa"
+
+    input:
+    val(prefix)
+    path(refgtf)
+    path(staridx)
+    path(reads)
+
+    output:
+    path("$prefix"), emit: ch_star_align
+
+    when:
+    task.ext.when == null || task.ext.when
+
+    """
+    STAR \\
+        --sjdbGTFfile  $refgtf \\
+        --genomeDir $staridx \\
+        --readFilesIn $reads \\
+        --runThreadN $task.cpus \\
+        --outWigType wiggle \\
+        --outWigStrand Stranded \\
         --outWigNorm RPM \\
-        --outSAMtype BAM SortedByCoordinate \\ ##生成的bam文件按坐标排序
+        --outSAMtype BAM SortedByCoordinate \\
         --quantMode TranscriptomeSAM GeneCounts \\
-        --runThreadN 10 \\
-        --sjdbGTFfile  ./data/hg38.gtf \\ ##参考基因组的注释文件
         --outReadsUnmapped Fastx \\
         --outMultimapperOrder Random \\
-        --genomeDir star_index \\ ##上一步生成的索引文件
-        --readFilesIn ERR2598067out.fastq.gz \\ ##过滤之后的原始的测序文件
-        --outFileNamePrefix  human \\ ##生成文件的前缀
+        --outFileNamePrefix $prefix \\
         --readFilesCommand gunzip -c
     """
 }
@@ -58,36 +63,47 @@ process SALMON_INDEX {
     label "devapa_salmon"
 
     input:
-    path(ref_fasta)
+    path(refrna)
     val(prefix)
 
     output:
-    path("star_index_$prefix"), emit: ch_star_index
+    path("salmon_index_$prefix"), emit: ch_salmon_index
 
     when:
     task.ext.when == null || task.ext.when
 
     """
-    salmon index -t refMrna.fa -i hg38.transcripts_index
+    salmon index -p $task.cpus -t $refrna -i salmon_index_$prefix
     """
 }
 
 
 process SALMON_QUANT {
+    tag "$meta.id"
     label "devapa_salmon"
 
     input:
-    path(ref_fasta)
+    tuple val(meta), path(reads)
+    path(index)
     val(prefix)
 
     output:
-    path("star_index_$prefix"), emit: ch_star_index
+    path("salmon_quant_$prefix"), emit: ch_salmon_quant
 
     when:
     task.ext.when == null || task.ext.when
 
+    script:
+    def reference   = "--index $index"
+    def input_reads = meta.single_end ? "-r $reads" : "-1 ${reads[0]} -2 ${reads[1]}"
+
     """
-    salmon quant -i hg38.transcripts_index -l A --validateMappings lenient -r ERR2598067out.fastq -o salmon_quant
+    salmon quant \\
+        -p $task.cpus \\
+        $reference \\
+        $input_reads \\
+        -l A --validateMappings lenient \\
+        -o salmon_quant_$prefix -r $reads
     """
 }
 
