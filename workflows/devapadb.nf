@@ -126,14 +126,14 @@ workflow DEVAPADB {
     //
     // MODULE: Salmon quant
     //
-    SALMON_QUANT (
-        INPUT_CHECK.out.reads,
-        SALMON_INDEX.out.index,
-        file(params.refgtf)
-        file(params.refrna),
-        false,false
-    )
-    ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
+    // SALMON_QUANT (
+    //     INPUT_CHECK.out.reads,
+    //     SALMON_INDEX.out.index,
+    //     file(params.refgtf)
+    //     file(params.refrna),
+    //     false,false
+    // )
+    // ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
 
     // //
     // // MODULE: MultiQC
