@@ -135,6 +135,9 @@ workflow DEVAPADB {
     )
     ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
 
+    CUSTOM_DUMPSOFTWAREVERSIONS (
+        ch_versions.unique().collectFile(name: 'collated_versions.yml')
+    )
     //
     // MODULE: MultiQC
     //
