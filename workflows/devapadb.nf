@@ -118,7 +118,6 @@ workflow DEVAPADB {
     // MODULE: Salmon index
     //
     SALMON_INDEX (
-        file(params.refgenome),
         file(params.refrna)
     )
     ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
