@@ -91,7 +91,7 @@ workflow DEVAPADB {
     // MODULE: Run FASTP
     //
     FASTP (
-        INPUT_CHECK.out.reads, false, false
+        INPUT_CHECK.out.reads
     )
     ch_versions = ch_versions.mix(FASTP.out.versions.first())
 
