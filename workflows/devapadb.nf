@@ -98,11 +98,11 @@ workflow DEVAPADB {
     //
     // MODULE: STAR index
     //
-    // STAR_GENOMEGENERATE (
-    //     file(params.refgenome),
-    //     file(params.refgtf)
-    // )
-    // ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
+    STAR_GENOMEGENERATE (
+        file(params.refgenome),
+        file(params.refgtf)
+    )
+    ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
 
     // //
     // // MODULE: STAR align
