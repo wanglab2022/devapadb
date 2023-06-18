@@ -133,7 +133,7 @@ workflow DEVAPADB {
         file(params.refrna),
         false,false
     )
-    // ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
+    ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
 
     // //
     // // MODULE: MultiQC
