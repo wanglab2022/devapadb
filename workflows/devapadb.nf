@@ -49,13 +49,13 @@ include { INPUT_CHECK        } from '../subworkflows/local/input_check'
 //
 // MODULE: Installed directly from nf-core/modules
 //
-include { FASTQC                      } from '../modules/nf-core/fastqc/main'
-include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
-include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
-include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
-include { SALMON_QUANT                } from '../modules/nf-core/salmon/quant/main'
-include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
-include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
+// include { FASTQC                      } from '../modules/nf-core/fastqc/main'
+// include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
+// include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
+// include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
+// include { SALMON_QUANT                } from '../modules/nf-core/salmon/quant/main'
+// include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
+// include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,80 +81,80 @@ workflow DEVAPADB {
     //
     // MODULE: Run FastQC
     //
-    FASTQC (
-        INPUT_CHECK.out.reads
-    )
-    ch_versions = ch_versions.mix(FASTQC.out.versions.first())
+    // FASTQC (
+    //     INPUT_CHECK.out.reads
+    // )
+    // ch_versions = ch_versions.mix(FASTQC.out.versions.first())
 
-    //
-    // MODULE: Run FASTP
-    //
-    FASTP (
-        INPUT_CHECK.out.reads
-    )
-    ch_versions = ch_versions.mix(FASTP.out.versions.first())
+    // //
+    // // MODULE: Run FASTP
+    // //
+    // FASTP (
+    //     INPUT_CHECK.out.reads
+    // )
+    // ch_versions = ch_versions.mix(FASTP.out.versions.first())
 
-    //
-    // MODULE: STAR index
-    //
-    STAR_GENOMEGENERATE (
-        file(params.refgenome),
-        file(params.refgtf)
-    )
-    ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
+    // //
+    // // MODULE: STAR index
+    // //
+    // STAR_GENOMEGENERATE (
+    //     file(params.refgenome),
+    //     file(params.refgtf)
+    // )
+    // ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
 
-    //
-    // MODULE: STAR align
-    //
-    STAR_ALIGN (
-        INPUT_CHECK.out.reads,
-        STAR_GENOMEGENERATE.out.index,
-        file(params.refgtf)
-    )
-    ch_versions = ch_versions.mix(STAR_ALIGN.out.versions.first())
+    // //
+    // // MODULE: STAR align
+    // //
+    // STAR_ALIGN (
+    //     INPUT_CHECK.out.reads,
+    //     STAR_GENOMEGENERATE.out.index,
+    //     file(params.refgtf)
+    // )
+    // ch_versions = ch_versions.mix(STAR_ALIGN.out.versions.first())
 
-    //
-    // MODULE: Salmon index
-    //
-    SALMON_INDEX (
-        file(params.refgenome),
-        file(params.refrna)
-    )
-    ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
+    // //
+    // // MODULE: Salmon index
+    // //
+    // SALMON_INDEX (
+    //     file(params.refgenome),
+    //     file(params.refrna)
+    // )
+    // ch_versions = ch_versions.mix(SALMON_INDEX.out.versions)
 
-    //
-    // MODULE: Salmon quant
-    //
-    SALMON_QUANT (
-        INPUT_CHECK.out.reads,
-        SALMON_INDEX.out.index,
-        file(params.refgtf)
-        file(params.refrna)
-    )
-    ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
+    // //
+    // // MODULE: Salmon quant
+    // //
+    // SALMON_QUANT (
+    //     INPUT_CHECK.out.reads,
+    //     SALMON_INDEX.out.index,
+    //     file(params.refgtf)
+    //     file(params.refrna)
+    // )
+    // ch_versions = ch_versions.mix(SALMON_QUANT.out.versions.first())
 
-    //
-    // MODULE: MultiQC
-    //
-    workflow_summary    = WorkflowDevapadb.paramsSummaryMultiqc(workflow, summary_params)
-    ch_workflow_summary = Channel.value(workflow_summary)
+    // //
+    // // MODULE: MultiQC
+    // //
+    // workflow_summary    = WorkflowDevapadb.paramsSummaryMultiqc(workflow, summary_params)
+    // ch_workflow_summary = Channel.value(workflow_summary)
 
-    methods_description    = WorkflowDevapadb.methodsDescriptionText(workflow, ch_multiqc_custom_methods_description)
-    ch_methods_description = Channel.value(methods_description)
+    // methods_description    = WorkflowDevapadb.methodsDescriptionText(workflow, ch_multiqc_custom_methods_description)
+    // ch_methods_description = Channel.value(methods_description)
 
-    ch_multiqc_files = Channel.empty()
-    ch_multiqc_files = ch_multiqc_files.mix(ch_workflow_summary.collectFile(name: 'workflow_summary_mqc.yaml'))
-    ch_multiqc_files = ch_multiqc_files.mix(ch_methods_description.collectFile(name: 'methods_description_mqc.yaml'))
-    ch_multiqc_files = ch_multiqc_files.mix(CUSTOM_DUMPSOFTWAREVERSIONS.out.mqc_yml.collect())
-    ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]}.ifEmpty([]))
+    // ch_multiqc_files = Channel.empty()
+    // ch_multiqc_files = ch_multiqc_files.mix(ch_workflow_summary.collectFile(name: 'workflow_summary_mqc.yaml'))
+    // ch_multiqc_files = ch_multiqc_files.mix(ch_methods_description.collectFile(name: 'methods_description_mqc.yaml'))
+    // ch_multiqc_files = ch_multiqc_files.mix(CUSTOM_DUMPSOFTWAREVERSIONS.out.mqc_yml.collect())
+    // ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]}.ifEmpty([]))
 
-    MULTIQC (
-        ch_multiqc_files.collect(),
-        ch_multiqc_config.toList(),
-        ch_multiqc_custom_config.toList(),
-        ch_multiqc_logo.toList()
-    )
-    multiqc_report = MULTIQC.out.report.toList()
+    // MULTIQC (
+    //     ch_multiqc_files.collect(),
+    //     ch_multiqc_config.toList(),
+    //     ch_multiqc_custom_config.toList(),
+    //     ch_multiqc_logo.toList()
+    // )
+    // multiqc_report = MULTIQC.out.report.toList()
 }
 
 /*
