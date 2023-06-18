@@ -7,6 +7,15 @@
 
 **wanglab2022/devapadb** is a bioinformatics pipeline and database that ...
 
+## Usage
+
+```sh
+nextflow run wanglab2022/devapadb -r dev -profile singularity --input samples.csv
+
+# denglab
+nextflow run wanglab2022/devapadb -r dev -profile charliecloud,charliecloud_denglab --input samples.csv -resume
+```
+
 ## Credits
 
 wanglab2022/devapadb was originally written by Jinlong Ru & Xia Wang.
