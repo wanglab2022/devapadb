@@ -49,7 +49,7 @@ include { INPUT_CHECK        } from '../subworkflows/local/input_check'
 //
 // MODULE: Installed directly from nf-core/modules
 //
-// include { FASTQC                      } from '../modules/nf-core/fastqc/main'
+include { FASTQC                      } from '../modules/nf-core/fastqc/main'
 // include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
 // include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
 // include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
@@ -81,10 +81,10 @@ workflow DEVAPADB {
     //
     // MODULE: Run FastQC
     //
-    // FASTQC (
-    //     INPUT_CHECK.out.reads
-    // )
-    // ch_versions = ch_versions.mix(FASTQC.out.versions.first())
+    FASTQC (
+        INPUT_CHECK.out.reads
+    )
+    ch_versions = ch_versions.mix(FASTQC.out.versions.first())
 
     // //
     // // MODULE: Run FASTP
