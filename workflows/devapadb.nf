@@ -51,7 +51,7 @@ include { INPUT_CHECK        } from '../subworkflows/local/input_check'
 //
 include { FASTQC                      } from '../modules/nf-core/fastqc/main'
 include { FASTP                       } from '../modules/nf-core/fastp/main'
-// include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
+include { STAR_GENOMEGENERATE         } from '../modules/nf-core/star/genomegenerate/main'
 // include { STAR_ALIGN                  } from '../modules/nf-core/star/align/main'
 // include { SALMON_INDEX                } from '../modules/nf-core/salmon/index/main'
 // include { SALMON_QUANT                } from '../modules/nf-core/salmon/quant/main'
@@ -95,14 +95,14 @@ workflow DEVAPADB {
     )
     ch_versions = ch_versions.mix(FASTP.out.versions.first())
 
-    // //
-    // // MODULE: STAR index
-    // //
-    // STAR_GENOMEGENERATE (
-    //     file(params.refgenome),
-    //     file(params.refgtf)
-    // )
-    // ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
+    //
+    // MODULE: STAR index
+    //
+    STAR_GENOMEGENERATE (
+        file(params.refgenome),
+        file(params.refgtf)
+    )
+    ch_versions = ch_versions.mix(STAR_GENOMEGENERATE.out.versions)
 
     // //
     // // MODULE: STAR align
