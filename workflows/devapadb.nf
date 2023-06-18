@@ -129,7 +129,7 @@ workflow DEVAPADB {
     SALMON_QUANT (
         INPUT_CHECK.out.reads,
         SALMON_INDEX.out.index,
-        file(params.refgtf)
+        file(params.refgtf),
         file(params.refrna),
         false,false
     )
