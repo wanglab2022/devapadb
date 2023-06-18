@@ -5,7 +5,7 @@
 
 ## Introduction
 
-**wanglab2022/devapadb** is a bioinformatics pipeline and database that ...
+**wanglab2022/devapadb** is a bioinformatic pipeline and database that ...
 
 ## Usage
 
