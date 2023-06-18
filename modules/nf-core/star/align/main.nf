@@ -57,7 +57,6 @@ process STAR_ALIGN {
         $out_sam_type \\
         $ignore_gtf \\
         $args
-        # $attrRG \\
 
     $mv_unsorted_bam
 
