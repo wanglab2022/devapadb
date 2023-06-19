@@ -140,7 +140,7 @@ workflow DEVAPADB {
     //
     DAPARS2 (
         STAR_ALIGN.out.bam_sorted.toSortedList(),
-        STAR_ALIGN.out.bam_sorted.collect(),
+        STAR_ALIGN.out.bam_noid.collect(),
         file(params.refbed),
         file(params.ref2symbol)
     )

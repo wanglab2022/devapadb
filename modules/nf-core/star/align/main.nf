@@ -23,6 +23,7 @@ process STAR_ALIGN {
 
     tuple val(meta), path('*d.out.bam')              , optional:true, emit: bam
     tuple val(meta), path('*sortedByCoord.out.bam')  , optional:true, emit: bam_sorted
+    path('*sortedByCoord.out.bam')  , optional:true, emit: bam_noid
     tuple val(meta), path('*toTranscriptome.out.bam'), optional:true, emit: bam_transcript
     tuple val(meta), path('*Aligned.unsort.out.bam') , optional:true, emit: bam_unsorted
     tuple val(meta), path('*fastq.gz')               , optional:true, emit: fastq

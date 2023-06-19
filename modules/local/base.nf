@@ -3,7 +3,7 @@ process DAPARS2 {
 
     input:
     val(input)
-    val(bams)
+    path(bams)
     path(refbed)
     path(ref2symbol)
 
