@@ -26,22 +26,6 @@ process DAPARS2 {
     prepare_inputs_for_apa_quant.sh -s sample_bam_list.tsv -g $refbed -r $ref2symbol
     cut -f1 refseq_3utr_annotation.bed | sort -u | grep -v "MT" > chrList.txt
     DaPars2_Multi_Sample_Multi_Chr.py Dapars2_running_configure.txt chrList.txt
-
-    # combine the Dapars2 results
-    for rstdir in \$(ls -d Dapars2_out_*); do
-        chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
-        # Add the chrid as a new column to the Dapars2 results, separate by tab
-        awk -v chrid=\$chrid 'BEGIN{FS=OFS="\t"}{print chrid,\$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt > \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp
-        head -n1 \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp >> Dapars2_result_temp.txt
-    done
-
-    head -n1 Dapars2_result_temp.txt > Dapars2_result.txt
-    for rstdir in \$(ls -d Dapars2_out_*); do
-        chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
-        tail -n+2 \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp >> Dapars2_result.txt
-    done
-
-    rm -f Dapars2_result_temp.txt
     """
 }
 
