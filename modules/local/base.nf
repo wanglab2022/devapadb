@@ -2,7 +2,7 @@ process DAPARS2 {
     label "devapa"
 
     input:
-    tuple val(meta), path(bam_file)
+    val(input)
 
     output:
     path("output.tsv"), emit: ch_dapars2_tsv
@@ -12,7 +12,7 @@ process DAPARS2 {
 
     script:
     """
-    echo "${meta.id}\t${bam_file.getFileName()}" > output.tsv
+    echo $input
     """
 }
 
