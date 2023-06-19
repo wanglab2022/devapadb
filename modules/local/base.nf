@@ -2,8 +2,7 @@ process DAPARS2 {
     label "devapa"
 
     input:
-    path(ref_fasta)
-    val(prefix)
+    tuple bams
 
     output:
     path("star_index_$prefix"), emit: ch_star_index
@@ -12,7 +11,7 @@ process DAPARS2 {
     task.ext.when == null || task.ext.when
 
     """
-    prepare_inputs_for_apa_quant.sh -s sample_list.txt -g hg38_refseq_whole_gene.bed -r hg38_refseq_id_to_symbol.txt
+    echo $bams
     """
 }
 
