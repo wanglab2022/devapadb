@@ -139,7 +139,7 @@ workflow DEVAPADB {
     // MODULE: DAPARS2
     //
     DAPARS2 (
-        STAR_ALIGN.out.bam_sorted.flatten()
+        STAR_ALIGN.out.bam_sorted.toSortedList()
     )
 
     CUSTOM_DUMPSOFTWAREVERSIONS (
