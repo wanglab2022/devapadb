@@ -26,6 +26,7 @@ process DAPARS2 {
     prepare_inputs_for_apa_quant.sh -s sample_bam_list.tsv -g $refbed -r $ref2symbol
     cut -f1 refseq_3utr_annotation.bed | sort -u | grep -v "MT" > chrList.txt
     DaPars2_Multi_Sample_Multi_Chr.py Dapars2_running_configure.txt chrList.txt
+    parse_dapars2.py -o dapars2_result.tsv
     """
 }
 
