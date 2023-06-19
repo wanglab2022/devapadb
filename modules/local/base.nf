@@ -2,17 +2,20 @@ process DAPARS2 {
     label "devapa"
 
     input:
-    val(bams)
+    tuple val(meta), path(bam_file)
 
     output:
+    path("output.tsv"), emit: ch_dapars2_tsv
 
     when:
     task.ext.when == null || task.ext.when
 
+    script:
     """
-    echo $bams
+    echo "${meta.id}\t${bam_file.getFileName()}" > output.tsv
     """
 }
+
 
 
 process APA_QUANT {
