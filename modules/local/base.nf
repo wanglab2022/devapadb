@@ -19,7 +19,7 @@ process DAPARS2 {
         // replace "_T[0-9]+" in i[0].id with ""
         sample_ids.add(i[0].id.replaceAll("_T[0-9]+", ""))
         // get the file basename of i[1]
-        bam_files.add(i[1].getName)
+        bam_files.add(i[1].getName())
     }
     """
     # create a tsv file, first column is sample id, second column is bam file
