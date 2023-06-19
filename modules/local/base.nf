@@ -16,7 +16,8 @@ process DAPARS2 {
     def sample_ids = [], bam_files = []
     for (i in input) {
         // replace "_T[0-9]+" in i[0].id with ""
-        sample_ids.add(i[0].id.replaceAll("_T[0-9]+", ""))
+        // sample_ids.add(i[0].id.replaceAll("_T[0-9]+", ""))
+        sample_ids.add(i[0].id)
         bam_files.add(i[1])
     }
     """
