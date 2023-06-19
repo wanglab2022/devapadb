@@ -5,7 +5,6 @@ process DAPARS2 {
     tuple bams
 
     output:
-    path("star_index_$prefix"), emit: ch_star_index
 
     when:
     task.ext.when == null || task.ext.when
