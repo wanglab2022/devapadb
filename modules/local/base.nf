@@ -12,7 +12,10 @@ process DAPARS2 {
 
     script:
     """
-    echo $input > output.tsv
+    for i in $input;do
+        echo $i
+        echo "hello"
+    done
     """
 }
 
