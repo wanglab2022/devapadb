@@ -22,6 +22,7 @@ process DAPARS2 {
     """
     # create a tsv file, first column is sample id, second column is bam file
     paste <(echo "${sample_ids.join('\n')}") <(echo "${bam_files.join('\n')}") > sample_bam_list.tsv
+    which prepare_inputs_for_apa_quant.sh
     prepare_inputs_for_apa_quant.sh -s sample_bam_list.txt -g $refbed -r $ref2symbol
     cut -f1 refseq_3utr_annotation.bed | sort -u | grep -v "MT" > chrList.txt
     DaPars2_Multi_Sample_Multi_Chr.py Dapars2_running_configure.txt chrList.txt
