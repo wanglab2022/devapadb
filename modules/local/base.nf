@@ -3,6 +3,7 @@ process DAPARS2 {
 
     input:
     val(input)
+    val(bams)
     path(refbed)
     path(ref2symbol)
 
@@ -17,7 +18,7 @@ process DAPARS2 {
     for (i in input) {
         // replace "_T[0-9]+" in i[0].id with ""
         sample_ids.add(i[0].id.replaceAll("_T[0-9]+", ""))
-        bam_files.add(i[1])
+        bam_files.add(i[1].replaceAll("/.*/", ""))
     }
     """
     # create a tsv file, first column is sample id, second column is bam file
