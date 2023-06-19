@@ -2,7 +2,7 @@ process DAPARS2 {
     label "devapa"
 
     input:
-    tuple bams
+    tuple val(mids), path(bams)
 
     output:
 
@@ -10,6 +10,8 @@ process DAPARS2 {
     task.ext.when == null || task.ext.when
 
     """
+    echo $mids
+    echo "hello"
     echo $bams
     """
 }
