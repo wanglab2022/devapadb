@@ -11,11 +11,14 @@ process DAPARS2 {
     task.ext.when == null || task.ext.when
 
     script:
+    def sample_ids = [], bam_files = []
+    for (i in input) {
+        sample_ids.add(i[0].id)
+        bam_files.add(i[1])
+    }
     """
-    for i in $input;do
-        echo $i
-        echo "hello"
-    done
+    # create a tsv file, first column is sample id, second column is bam file
+    paste <(echo "${sample_ids.join('\n')}") <(echo "${bam_files.join('\n')}") > output.tsv
     """
 }
 
