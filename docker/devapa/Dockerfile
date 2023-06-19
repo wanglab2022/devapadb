@@ -18,4 +18,7 @@ RUN conda env update -n base -f /tmp/env.yml
 # clean
 RUN conda clean --all --yes
 
-ENV PATH=/home/3aQTL_pipe/src:$PATH
+RUN cd /home && \
+    mv 3aQTL_pipe /opt
+
+ENV PATH=/opt/3aQTL_pipe/src:$PATH
