@@ -7,7 +7,7 @@ process DAPARS2 {
     path(ref2symbol)
 
     output:
-    path("sample_bam_list.tsv"), emit: ch_dapars2_tsv
+    path("dapars2_result.tsv"), emit: ch_dapars2_tsv
 
     when:
     task.ext.when == null || task.ext.when
