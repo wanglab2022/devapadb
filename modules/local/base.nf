@@ -4,8 +4,7 @@ process DAPARS2 {
     input:
     val(input)
 
-    output:
-    path("output.tsv"), emit: ch_dapars2_tsv
+
 
     when:
     task.ext.when == null || task.ext.when
