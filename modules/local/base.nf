@@ -3,7 +3,6 @@ process DAPARS2 {
 
     input:
     val(input)
-    path(bams)
     path(refbed)
     path(ref2symbol)
 
@@ -18,8 +17,7 @@ process DAPARS2 {
     for (i in input) {
         // replace "_T[0-9]+" in i[0].id with ""
         sample_ids.add(i[0].id.replaceAll("_T[0-9]+", ""))
-        // get the file basename of i[1]
-        bam_files.add(i[1].Name)
+        bam_files.add(i[1])
     }
     """
     # create a tsv file, first column is sample id, second column is bam file
@@ -34,8 +32,14 @@ process DAPARS2 {
         chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
         # Add the chrid as a new column to the Dapars2 results, separate by tab
         awk -v chrid=\$chrid 'BEGIN{FS=OFS="\t"}{print chrid,\$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt
+        head -n1 \$rstdir/Dapars2_result_temp.\${chrid}.txt > Dapars2_result_temp.txt
     done
 
+    head -n1 Dapars2_result_temp.txt > Dapars2_result.txt
+    for rstdir in \$(ls -d Dapars2_out_*); do
+        chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
+        tail -n+2 \$rstdir/Dapars2_result_temp.\${chrid}.txt >> Dapars2_result.txt
+    done
     """
 }
 
