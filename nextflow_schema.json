@@ -81,6 +81,24 @@
                     "help_text": "This parameter is *mandatory*.",
                     "fa_icon": "far fa-file-code"
                 },
+                "refbed": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.bed(\\.gz)?$",
+                    "description": "Path to BED file containing transcriptome intervals.",
+                    "help_text": "This parameter is *mandatory*.",
+                    "fa_icon": "far fa-file-code"
+                },
+                "ref2symbol": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.txt(\\.gz)?$",
+                    "description": "Path to file containing transcript ID to gene symbol mapping.",
+                    "help_text": "This parameter is *mandatory*.",
+                    "fa_icon": "far fa-file-code"
+                },
                 "igenomes_base": {
                     "type": "string",
                     "format": "directory-path",
