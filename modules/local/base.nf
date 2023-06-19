@@ -31,15 +31,17 @@ process DAPARS2 {
     for rstdir in \$(ls -d Dapars2_out_*); do
         chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
         # Add the chrid as a new column to the Dapars2 results, separate by tab
-        awk -v chrid=\$chrid 'BEGIN{FS=OFS="\t"}{print chrid,\$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt
-        head -n1 \$rstdir/Dapars2_result_temp.\${chrid}.txt > Dapars2_result_temp.txt
+        awk -v chrid=\$chrid 'BEGIN{FS=OFS="\t"}{print chrid,\$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt > \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp
+        head -n1 \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp >> Dapars2_result_temp.txt
     done
 
     head -n1 Dapars2_result_temp.txt > Dapars2_result.txt
     for rstdir in \$(ls -d Dapars2_out_*); do
         chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
-        tail -n+2 \$rstdir/Dapars2_result_temp.\${chrid}.txt >> Dapars2_result.txt
+        tail -n+2 \$rstdir/Dapars2_result_temp.\${chrid}.txt.tmp >> Dapars2_result.txt
     done
+
+    rm -f Dapars2_result_temp.txt
     """
 }
 
