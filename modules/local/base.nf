@@ -30,8 +30,8 @@ process DAPARS2 {
     # combine the Dapars2 results
     for rstdir in \$(ls -d Dapars2_out_*); do
         chrid=\$(echo \$rstdir | sed 's/Dapars2_out_//g')
-        # Add the $chrid as a new column to the Dapars2 results, separate by tab
-        awk -v chrid=$chrid 'BEGIN{FS=OFS="\t"}{print chrid,$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt
+        # Add the chrid as a new column to the Dapars2 results, separate by tab
+        awk -v chrid=\$chrid 'BEGIN{FS=OFS="\t"}{print chrid,\$0}' \$rstdir/Dapars2_result_temp.\${chrid}.txt
     done > Dapars2_result.txt
     """
 }
