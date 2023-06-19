@@ -21,4 +21,11 @@ RUN conda clean --all --yes
 RUN cd /home && \
     mv 3aQTL_pipe /opt
 
-ENV PATH=/opt/3aQTL_pipe/src:$PATH
+COPY ./docker/devapa/*.py /opt/3aQTL_pipe/src/
+COPY ./docker/devapa/*.sh /opt/3aQTL_pipe/src/
+COPY ./docker/devapa/*.R /opt/3aQTL_pipe/src/
+RUN chmod +x /opt/3aQTL_pipe/src/*.sh && \
+    chmod +x /opt/3aQTL_pipe/src/*.py && \
+    chmod +x /opt/3aQTL_pipe/src/*.R
+
+ENV PATH=/opt/3aQTL_pipe/src:/opt/conda/envs/myEnv/bin:$PATH
