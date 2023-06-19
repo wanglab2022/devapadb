@@ -13,7 +13,7 @@ COPY ./docker/devapa/env.yml /tmp
 
 # Install packages
 # RUN --mount=type=cache,target=/opt/conda/pkgs micromamba install -n base -f /tmp/env_base.yml -y
-RUN conda env update -n base -f /tmp/env.yml
+RUN conda env update -n myEnv -f /tmp/env.yml
 
 # clean
 RUN conda clean --all --yes
@@ -28,4 +28,4 @@ RUN chmod +x /opt/3aQTL_pipe/src/*.sh && \
     chmod +x /opt/3aQTL_pipe/src/*.py && \
     chmod +x /opt/3aQTL_pipe/src/*.R
 
-ENV PATH=/opt/3aQTL_pipe/src:/opt/conda/envs/myEnv/bin:$PATH
+ENV PATH=/opt/3aQTL_pipe/src:/opt/conda/envs/myEnv/bin:/opt/conda/bin:$PATH
