@@ -1,217 +1,217 @@
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576379/ERR2576379.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576380/ERR2576380.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576381/ERR2576381.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576382/ERR2576382.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576383/ERR2576383.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576384/ERR2576384.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576385/ERR2576385.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576386/ERR2576386.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576387/ERR2576387.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576388/ERR2576388.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576389/ERR2576389.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576390/ERR2576390.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576391/ERR2576391.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576392/ERR2576392.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576393/ERR2576393.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576394/ERR2576394.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576395/ERR2576395.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576396/ERR2576396.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576397/ERR2576397.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576398/ERR2576398.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576399/ERR2576399.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576400/ERR2576400.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576401/ERR2576401.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576402/ERR2576402.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576403/ERR2576403.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576404/ERR2576404.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576405/ERR2576405.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576406/ERR2576406.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576407/ERR2576407.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576408/ERR2576408.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576409/ERR2576409.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576410/ERR2576410.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576411/ERR2576411.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576412/ERR2576412.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576413/ERR2576413.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576414/ERR2576414.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576415/ERR2576415.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576416/ERR2576416.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576417/ERR2576417.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576418/ERR2576418.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576419/ERR2576419.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576420/ERR2576420.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576421/ERR2576421.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576422/ERR2576422.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576423/ERR2576423.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576424/ERR2576424.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576425/ERR2576425.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576426/ERR2576426.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576427/ERR2576427.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576428/ERR2576428.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576429/ERR2576429.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576430/ERR2576430.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576431/ERR2576431.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576432/ERR2576432.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576433/ERR2576433.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576434/ERR2576434.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576435/ERR2576435.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576436/ERR2576436.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576437/ERR2576437.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576438/ERR2576438.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576439/ERR2576439.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576440/ERR2576440.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576441/ERR2576441.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576442/ERR2576442.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576443/ERR2576443.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576444/ERR2576444.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576445/ERR2576445.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576446/ERR2576446.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576447/ERR2576447.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576448/ERR2576448.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576449/ERR2576449.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576450/ERR2576450.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576451/ERR2576451.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576452/ERR2576452.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576453/ERR2576453.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576454/ERR2576454.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576455/ERR2576455.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576456/ERR2576456.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576457/ERR2576457.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576458/ERR2576458.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576459/ERR2576459.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576460/ERR2576460.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576461/ERR2576461.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576462/ERR2576462.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576463/ERR2576463.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576464/ERR2576464.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576465/ERR2576465.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576466/ERR2576466.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576467/ERR2576467.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576468/ERR2576468.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576469/ERR2576469.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576470/ERR2576470.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576471/ERR2576471.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576472/ERR2576472.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576473/ERR2576473.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576474/ERR2576474.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576475/ERR2576475.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576476/ERR2576476.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576477/ERR2576477.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576478/ERR2576478.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576479/ERR2576479.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576480/ERR2576480.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576481/ERR2576481.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576482/ERR2576482.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576483/ERR2576483.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576484/ERR2576484.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576485/ERR2576485.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576486/ERR2576486.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576487/ERR2576487.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576488/ERR2576488.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576489/ERR2576489.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576490/ERR2576490.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576491/ERR2576491.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576492/ERR2576492.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576493/ERR2576493.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576494/ERR2576494.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576495/ERR2576495.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576496/ERR2576496.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576497/ERR2576497.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576498/ERR2576498.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576499/ERR2576499.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576500/ERR2576500.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576501/ERR2576501.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576502/ERR2576502.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576503/ERR2576503.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576504/ERR2576504.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576505/ERR2576505.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576506/ERR2576506.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576507/ERR2576507.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576508/ERR2576508.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576509/ERR2576509.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576510/ERR2576510.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576511/ERR2576511.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576512/ERR2576512.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576513/ERR2576513.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576514/ERR2576514.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576515/ERR2576515.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576516/ERR2576516.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576517/ERR2576517.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576518/ERR2576518.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576519/ERR2576519.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576520/ERR2576520.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576521/ERR2576521.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576522/ERR2576522.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576523/ERR2576523.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576524/ERR2576524.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576525/ERR2576525.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576526/ERR2576526.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576527/ERR2576527.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576528/ERR2576528.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576529/ERR2576529.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576530/ERR2576530.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576531/ERR2576531.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576532/ERR2576532.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576533/ERR2576533.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576534/ERR2576534.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576535/ERR2576535.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576536/ERR2576536.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576537/ERR2576537.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576538/ERR2576538.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576539/ERR2576539.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576540/ERR2576540.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576541/ERR2576541.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576542/ERR2576542.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576543/ERR2576543.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576544/ERR2576544.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576545/ERR2576545.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576546/ERR2576546.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576547/ERR2576547.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576548/ERR2576548.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576549/ERR2576549.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576550/ERR2576550.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576551/ERR2576551.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576552/ERR2576552.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576553/ERR2576553.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576554/ERR2576554.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576555/ERR2576555.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576556/ERR2576556.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576557/ERR2576557.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576558/ERR2576558.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576559/ERR2576559.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576560/ERR2576560.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576561/ERR2576561.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576562/ERR2576562.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576563/ERR2576563.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576564/ERR2576564.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576565/ERR2576565.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576566/ERR2576566.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576567/ERR2576567.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576568/ERR2576568.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576569/ERR2576569.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576570/ERR2576570.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576571/ERR2576571.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576572/ERR2576572.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576573/ERR2576573.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576574/ERR2576574.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576575/ERR2576575.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576576/ERR2576576.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576577/ERR2576577.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576578/ERR2576578.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576579/ERR2576579.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576580/ERR2576580.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576581/ERR2576581.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576582/ERR2576582.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576583/ERR2576583.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576584/ERR2576584.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576585/ERR2576585.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576586/ERR2576586.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576587/ERR2576587.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576588/ERR2576588.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576589/ERR2576589.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576590/ERR2576590.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576591/ERR2576591.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576592/ERR2576592.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576593/ERR2576593.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576594/ERR2576594.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576595/ERR2576595.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576379/ERR2576379.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576380/ERR2576380.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576381/ERR2576381.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576382/ERR2576382.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576383/ERR2576383.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576384/ERR2576384.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576385/ERR2576385.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576386/ERR2576386.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576387/ERR2576387.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576388/ERR2576388.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576389/ERR2576389.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576390/ERR2576390.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576391/ERR2576391.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576392/ERR2576392.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576393/ERR2576393.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576394/ERR2576394.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576395/ERR2576395.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576396/ERR2576396.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576397/ERR2576397.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576398/ERR2576398.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576399/ERR2576399.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576400/ERR2576400.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576401/ERR2576401.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576402/ERR2576402.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576403/ERR2576403.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576404/ERR2576404.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576405/ERR2576405.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576406/ERR2576406.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576407/ERR2576407.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576408/ERR2576408.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576409/ERR2576409.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576410/ERR2576410.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576411/ERR2576411.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576412/ERR2576412.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576413/ERR2576413.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576414/ERR2576414.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576415/ERR2576415.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576416/ERR2576416.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576417/ERR2576417.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576418/ERR2576418.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576419/ERR2576419.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576420/ERR2576420.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576421/ERR2576421.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576422/ERR2576422.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576423/ERR2576423.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576424/ERR2576424.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576425/ERR2576425.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576426/ERR2576426.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576427/ERR2576427.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576428/ERR2576428.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576429/ERR2576429.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576430/ERR2576430.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576431/ERR2576431.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576432/ERR2576432.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576433/ERR2576433.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576434/ERR2576434.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576435/ERR2576435.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576436/ERR2576436.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576437/ERR2576437.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576438/ERR2576438.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576439/ERR2576439.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576440/ERR2576440.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576441/ERR2576441.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576442/ERR2576442.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576443/ERR2576443.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576444/ERR2576444.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576445/ERR2576445.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576446/ERR2576446.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576447/ERR2576447.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576448/ERR2576448.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576449/ERR2576449.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576450/ERR2576450.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576451/ERR2576451.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576452/ERR2576452.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576453/ERR2576453.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576454/ERR2576454.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576455/ERR2576455.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576456/ERR2576456.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576457/ERR2576457.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576458/ERR2576458.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576459/ERR2576459.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576460/ERR2576460.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576461/ERR2576461.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576462/ERR2576462.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576463/ERR2576463.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576464/ERR2576464.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576465/ERR2576465.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576466/ERR2576466.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576467/ERR2576467.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576468/ERR2576468.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576469/ERR2576469.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576470/ERR2576470.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576471/ERR2576471.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576472/ERR2576472.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576473/ERR2576473.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576474/ERR2576474.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576475/ERR2576475.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576476/ERR2576476.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576477/ERR2576477.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576478/ERR2576478.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576479/ERR2576479.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576480/ERR2576480.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576481/ERR2576481.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576482/ERR2576482.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576483/ERR2576483.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576484/ERR2576484.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576485/ERR2576485.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576486/ERR2576486.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576487/ERR2576487.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576488/ERR2576488.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576489/ERR2576489.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576490/ERR2576490.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576491/ERR2576491.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576492/ERR2576492.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576493/ERR2576493.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576494/ERR2576494.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576495/ERR2576495.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576496/ERR2576496.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576497/ERR2576497.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576498/ERR2576498.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576499/ERR2576499.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576500/ERR2576500.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576501/ERR2576501.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576502/ERR2576502.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576503/ERR2576503.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576504/ERR2576504.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576505/ERR2576505.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576506/ERR2576506.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576507/ERR2576507.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576508/ERR2576508.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576509/ERR2576509.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576510/ERR2576510.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576511/ERR2576511.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576512/ERR2576512.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576513/ERR2576513.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576514/ERR2576514.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576515/ERR2576515.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576516/ERR2576516.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576517/ERR2576517.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576518/ERR2576518.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576519/ERR2576519.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576520/ERR2576520.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576521/ERR2576521.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576522/ERR2576522.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576523/ERR2576523.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576524/ERR2576524.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576525/ERR2576525.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576526/ERR2576526.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576527/ERR2576527.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576528/ERR2576528.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576529/ERR2576529.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576530/ERR2576530.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576531/ERR2576531.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576532/ERR2576532.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576533/ERR2576533.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576534/ERR2576534.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576535/ERR2576535.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576536/ERR2576536.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576537/ERR2576537.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576538/ERR2576538.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576539/ERR2576539.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576540/ERR2576540.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576541/ERR2576541.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576542/ERR2576542.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576543/ERR2576543.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576544/ERR2576544.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576545/ERR2576545.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576546/ERR2576546.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576547/ERR2576547.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576548/ERR2576548.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576549/ERR2576549.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576550/ERR2576550.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576551/ERR2576551.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576552/ERR2576552.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576553/ERR2576553.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576554/ERR2576554.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576555/ERR2576555.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576556/ERR2576556.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576557/ERR2576557.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576558/ERR2576558.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576559/ERR2576559.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576560/ERR2576560.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576561/ERR2576561.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576562/ERR2576562.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576563/ERR2576563.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576564/ERR2576564.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576565/ERR2576565.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576566/ERR2576566.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576567/ERR2576567.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576568/ERR2576568.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576569/ERR2576569.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576570/ERR2576570.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576571/ERR2576571.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576572/ERR2576572.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576573/ERR2576573.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576574/ERR2576574.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576575/ERR2576575.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576576/ERR2576576.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576577/ERR2576577.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576578/ERR2576578.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576579/ERR2576579.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576580/ERR2576580.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576581/ERR2576581.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576582/ERR2576582.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576583/ERR2576583.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576584/ERR2576584.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576585/ERR2576585.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/006/ERR2576586/ERR2576586.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/007/ERR2576587/ERR2576587.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/008/ERR2576588/ERR2576588.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/009/ERR2576589/ERR2576589.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/000/ERR2576590/ERR2576590.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/001/ERR2576591/ERR2576591.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/002/ERR2576592/ERR2576592.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/003/ERR2576593/ERR2576593.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/004/ERR2576594/ERR2576594.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR257/005/ERR2576595/ERR2576595.fastq.gz

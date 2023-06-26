@@ -1,28 +1,28 @@
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032831/DRR032831.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032833/DRR032833.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032839/DRR032839.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032842/DRR032842.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032848/DRR032848.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032849/DRR032849.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032854/DRR032854.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032855/DRR032855.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032857/DRR032857.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032836/DRR032836.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032841/DRR032841.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032846/DRR032846.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032853/DRR032853.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032832/DRR032832.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032837/DRR032837.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032838/DRR032838.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032845/DRR032845.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032847/DRR032847.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032856/DRR032856.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032830/DRR032830.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032835/DRR032835.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032840/DRR032840.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032843/DRR032843.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032852/DRR032852.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032834/DRR032834.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032844/DRR032844.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032850/DRR032850.fastq.gz
-wget https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032851/DRR032851.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032831/DRR032831.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032833/DRR032833.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032839/DRR032839.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032842/DRR032842.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032848/DRR032848.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032849/DRR032849.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032854/DRR032854.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032855/DRR032855.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032857/DRR032857.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032836/DRR032836.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032841/DRR032841.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032846/DRR032846.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032853/DRR032853.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032832/DRR032832.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032837/DRR032837.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032838/DRR032838.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032845/DRR032845.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032847/DRR032847.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032856/DRR032856.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032830/DRR032830.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032835/DRR032835.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032840/DRR032840.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032843/DRR032843.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032852/DRR032852.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032834/DRR032834.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032844/DRR032844.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032850/DRR032850.fastq.gz
+wget -c https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR032/DRR032851/DRR032851.fastq.gz
