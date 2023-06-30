@@ -12,8 +12,11 @@
 ```sh
 nextflow run wanglab2022/devapadb -r dev -profile singularity --input samples.csv
 
-# denglab
+# denglab@LRZ
 nextflow run wanglab2022/devapadb -r dev -profile charliecloud,charliecloud_denglab --input samples.csv -resume
+
+# denglab@HMGU
+nextflow run wanglab2022/devapadb -r dev -profile singularity,singularity_denglab,slurm_hmgu --input samples.csv -resume
 ```
 
 ## Credits
