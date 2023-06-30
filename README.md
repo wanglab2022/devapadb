@@ -9,7 +9,23 @@
 
 ## Usage
 
+### 1. Prepare data
+
+```
+refs
+├── ref2symbol.txt       // refseq_id_to_symbol
+├── ref.bed              // refseq_whole_gene.bed
+├── ref.fa               // Transcriptome FASTA file
+├── ref.fasta            // Genome FASTA file
+└── ref.gtf              // GTF annotation file
+
+samples.csv
+```
+
+### 2. Run pipeline
+
 ```sh
+# wanglab
 nextflow run wanglab2022/devapadb -r dev -profile singularity --input samples.csv
 
 # denglab@LRZ
@@ -21,7 +37,7 @@ nextflow run wanglab2022/devapadb -r dev -profile singularity,singularity_dengla
 
 ## Credits
 
-wanglab2022/devapadb was originally written by Jinlong Ru & Xia Wang.
+DevAPAdb was originally written by [Jinlong Ru](https://github.com/rujinlong), [Dingbang Ding](https://github.com/Dingdingbang0514) and Xia Wang.
 
 We thank the following people for their extensive assistance in the development of this pipeline:
 
