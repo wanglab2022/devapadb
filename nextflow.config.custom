@@ -1,0 +1,50 @@
+process {
+    withName: INPUT_CHECK {
+        cpus = 1
+        memory = "1.GB"
+        time = "1.h"
+    }
+
+    withName: FASTQC {
+        cpus = 1
+        memory = "2.GB"
+        time = "1.h"
+    }
+
+    withName: FASTP {
+        cpus = 1
+        memory = "4.GB"
+        time = "10.h"
+    }
+
+    withName: STAR_GENOMEGENERATE {
+        cpus = 1
+        memory = "10.GB"
+        time = "10.h"
+    }
+
+    withName: STAR_ALIGN {
+        ext.args = "--outSAMtype BAM SortedByCoordinate --outWigType wiggle --outWigStrand Stranded --outWigNorm RPM --quantMode TranscriptomeSAM GeneCounts --outReadsUnmapped Fastx --outMultimapperOrder Random --readFilesCommand gunzip -c "
+        cpus = 1
+        memory = "5.GB"
+        time = "10.h"
+    }
+
+    withName: SALMON_INDEX {
+        cpus = 1
+        memory = "8.GB"
+        time = "20.h"
+    }
+
+    withName: SALMON_QUANT {
+        cpus = 1
+        memory = "2.GB"
+        time = "2.h"
+    }
+
+    withName: DAPARS2 {
+        cpus = 1
+        memory = "10.GB"
+        time = "50.h"
+    }
+}
