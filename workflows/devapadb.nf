@@ -108,7 +108,7 @@ workflow DEVAPADB {
     // MODULE: STAR align
     //
     STAR_ALIGN (
-        INPUT_CHECK.out.reads,
+        FASTP.out.reads,
         STAR_GENOMEGENERATE.out.index,
         file(params.refgtf),
         false,false,false
@@ -127,7 +127,7 @@ workflow DEVAPADB {
     // MODULE: Salmon quant
     //
     SALMON_QUANT (
-        INPUT_CHECK.out.reads,
+        FASTP.out.reads,
         SALMON_INDEX.out.index,
         file(params.refgtf),
         file(params.refrna),
