@@ -25,7 +25,7 @@ def create_fastq_channel(LinkedHashMap row) {
     // create meta map
     def meta = [:]
     meta.id         = row.sample
-    meta.pair_end = row.fastq_2.toBoolean()
+    meta.pair_end = row.fastq_2 != null
     print("INFO: Sample ${meta.id} is ${meta.pair_end ? 'paired-end' : 'single-end'}")
     print(meta.pair_end)
 
