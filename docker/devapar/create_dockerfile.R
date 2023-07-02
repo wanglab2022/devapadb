@@ -5,7 +5,10 @@ dir.create(dir_build)
 the_lockfile <- file.path(dir_build, "renv.lock")
 custom_packages <- c(
   # attachment::att_from_description(),
-  "tximeta"
+  "tximeta",
+  "data.table",
+  "tidyverse",
+  "here"
 )
 renv::snapshot(
   packages = custom_packages,
