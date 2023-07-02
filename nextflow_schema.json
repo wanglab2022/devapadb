@@ -34,9 +34,8 @@
                 },
                 "species": {
                     "type": "string",
-                    "description": "Species of the samples.",
-                    "fa_icon": "fas fa-dna"
-                }
+                    "description": "Species of the samples."
+                },
                 "email": {
                     "type": "string",
                     "description": "Email address for completion summary.",
