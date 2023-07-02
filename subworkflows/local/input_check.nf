@@ -26,6 +26,8 @@ def create_fastq_channel(LinkedHashMap row) {
     def meta = [:]
     meta.id         = row.sample
     meta.pair_end = row.fastq_2.toBoolean()
+    print("INFO: Sample ${meta.id} is ${meta.pair_end ? 'paired-end' : 'single-end'}")
+    print(meta.pair_end)
 
     // add path(s) of the fastq file(s) to the meta map
     def fastq_meta = []
