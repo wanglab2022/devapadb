@@ -28,3 +28,24 @@ process DAPARS2 {
     parse_dapars2.py -o dapars2_result.tsv
     """
 }
+
+
+process rst_salmon {
+    label "r"
+
+    input:
+    val(species)
+    path(ref2symbol)
+    path(salmon_output)
+
+    output:
+    path("*.rds"), emit: ch_rst_salmon_rds
+
+    when:
+    task.ext.when == null || task.ext.when
+
+    script:
+    """
+    Rscript create_tximeta.r -s $salmon_output -r $ref2symbol -f salmon_${species}.rds
+    """
+}
