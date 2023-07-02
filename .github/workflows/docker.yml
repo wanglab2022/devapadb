@@ -3,8 +3,8 @@ name: Docker
 on:
   push:
     tags:
-      - 'v*'
-      - 'd*'
+      - "v*"
+      - "d*"
 
 jobs:
   push_to_registry:
@@ -14,8 +14,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./docker/devapa/Dockerfile
-            image: wanglab2022/devapa
+          # - dockerfile: ./docker/devapa/Dockerfile
+          #   image: wanglab2022/devapa
+          - dockerfile: ./docker/devapar/Dockerfile
+            image: wanglab2022/devapar
     permissions:
       contents: read
       packages: write
