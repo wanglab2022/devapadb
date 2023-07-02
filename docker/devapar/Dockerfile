@@ -1,4 +1,4 @@
-FROM rocker/r-base:4.3.0
+FROM rocker/verse:4.3.0
 LABEL maintainer="Jinlong Ru"
 WORKDIR /app
 
