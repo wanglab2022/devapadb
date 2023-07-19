@@ -8,6 +8,7 @@ process DAPARS2 {
 
     output:
     path("dapars2_result.tsv"), emit: ch_dapars2_tsv
+    path("refseq_3utr_annotation.bed"), emit: ch_dapars2_bed
 
     when:
     task.ext.when == null || task.ext.when
